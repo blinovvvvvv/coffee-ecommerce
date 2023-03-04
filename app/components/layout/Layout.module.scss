@@ -1,0 +1,7 @@
+.layout {
+	@apply px-10 py-8 bg-white h-full;
+
+	> .content {
+		@apply relative mx-auto max-w-7xl;
+	}
+}

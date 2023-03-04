@@ -1,0 +1,38 @@
+.cart {
+	@apply flex items-center;
+	> .info {
+		@apply tracking-widest flex items-center gap-2;
+		> .count {
+			@apply flex h-5 w-5 items-center text-xs justify-center rounded-full bg-red pl-0.5 text-white text-center;
+		}
+		> .title {
+			@apply text-sm font-medium;
+		}
+	}
+}
+
+.footer {
+	> div:first-child {
+		@apply text-sm text-beige;
+	}
+
+	> div:last-child {
+		@apply text-lg font-semibold;
+	}
+}
+
+.item {
+	@apply flex items-center gap-4 border-b border-b-[#F7F4F0] py-4;
+
+	.name {
+		@apply w-36 truncate font-semibold;
+	}
+
+	.price {
+		@apply mt-1 text-sm text-beige;
+	}
+
+	.size {
+		@apply text-xs text-beige opacity-70;
+	}
+}

@@ -1,0 +1,16 @@
+.menu {
+	@apply flex items-center gap-6 uppercase font-medium;
+
+	> .item {
+		@apply block relative;
+		&::after {
+			content: '';
+			@apply w-0 bg-black absolute top-[100%] left-0 h-[2px] transition-all duration-500;
+		}
+		&:hover {
+			&::after {
+				@apply w-full bg-black;
+			}
+		}
+	}
+}

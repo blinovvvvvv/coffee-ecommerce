@@ -1,0 +1,7 @@
+.header {
+	@apply flex items-center justify-between;
+
+	> .left {
+		@apply flex items-center gap-6;
+	}
+}
